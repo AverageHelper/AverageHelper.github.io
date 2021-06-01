@@ -24,7 +24,7 @@ authors:
   john:
     name: Average Helper
     display_name: Average  
-    avatar: 'https://avatars.githubusercontent.com/u/1500092?v=4'
+    avatar: 'assets/images/avatar.jpeg'
     gravatar: ''
     email: ''
     web: https://github.com/AverageHelper
