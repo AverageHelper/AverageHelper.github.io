@@ -1,18 +1,27 @@
 # Site
-name: "An Average Blog"
+name: "Average Helper"
 title: "An Average Blog"
-description: "I'm just some guy"
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
-baseurl: ''
-google_analytics: ''
-disqus: ''
-mailchimp-list: ''
+description: "Just some guy, trying to do good things I guess."
+logo: "assets/images/logo.png"
+favicon: "assets/images/logo.png"
+baseurl: ""
+google_analytics: ""
+disqus: ""
+mailchimp-list: ""
 include: ["_pages"]
 permalink: /:title/
 
 # Authors
 authors:
+  avg:
+    name: Average Helper
+    display_name: Average
+    avatar: "assets/images/avatar.jpeg"
+    gravatar: ""
+    email: "avghelper@mailbox.org"
+    web: https://github.com/AverageHelper
+    twitter: https://twitter.com/avghelper
+    description: "Full-stack software engineer"
   sal:
     name: Sal
     display_name: Sal
@@ -21,15 +30,6 @@ authors:
     web: https://www.wowthemes.net
     twitter: https://twitter.com/wowthemesnet
     description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  avg:
-    name: Average Helper
-    display_name: Average
-    avatar: 'assets/images/avatar.jpeg'
-    gravatar: ''
-    email: ''
-    web: https://github.com/AverageHelper
-    twitter: https://twitter.com/avghelper
-    description: "Just some guy."
 
 # Plugins
 plugins:
@@ -38,19 +38,19 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
-    
+
 # Archives
 jekyll-archives:
   enabled:
     - categories
   layout: archive
   permalinks:
-    category: '/category/:name/'
-    
-# Pagination 
+    category: "/category/:name/"
+
+# Pagination
 paginate: 6
 paginate_path: /page:num/
-    
+
 # Other
 markdown: kramdown
 
