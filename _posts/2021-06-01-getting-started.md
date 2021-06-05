@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Getting Started"
-author: avg
-categories: [ Jekyll, tutorial ]
-image: assets/images/01-honest-work.jpeg
+title: "Getting Started"
+author: James Robinson
+date: 2021-06-01 10:34:00 -0600
+categories: [Blogging]
+tags: [first, starting out, beginning, blogging]
 ---
 
 First!

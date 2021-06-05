@@ -1,72 +1,162 @@
-# Site
-name: "Average Helper"
-title: "An Average Blog"
-description: "Just some guy, trying to do good things I guess."
-logo: "assets/images/logo.png"
-favicon: "assets/images/logo.png"
+# The Site Configuration
+
+# Import the theme
+theme: jekyll-theme-chirpy
+
+# Only if your site type is GitHub Project sites and doesn't have a custom domain,
+# change below value to '/projectname'.
 baseurl: ""
-google_analytics: ""
-disqus: ""
-mailchimp-list: ""
-include: ["_pages"]
-permalink: /:title/
 
-# Authors
-authors:
-  avg:
-    name: Average Helper
-    display_name: Average
-    avatar: "assets/images/avatar.jpeg"
-    gravatar: ""
-    email: "avghelper@mailbox.org"
-    web: https://github.com/AverageHelper
-    twitter: https://twitter.com/avghelper
-    description: "Full-stack software engineer"
-  sal:
-    name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+# the HTML language tag › https://www.w3.org/International/questions/qa-choosing-language-tags
+lang: en-US
 
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-archives
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+# Reference: MST == UTC −0700 and MDT == UTC -0600
+timezone: America/Denver
 
-# Archives
-jekyll-archives:
-  enabled:
-    - categories
-  layout: archive
-  permalinks:
-    category: "/category/:name/"
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# --------------------------
+title: Average Helper
 
-# Pagination
-paginate: 6
-paginate_path: /page:num/
+tagline: An Average Blog
 
-# Other
-markdown: kramdown
+description: >-
+  Just some guy, trying to do good things I guess.
+
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: "https://averagehelper.github.io"
+
+github:
+  username: AverageHelper
+
+twitter:
+  username: avghelper
+
+social:
+  # Change to your full name.
+  # It will be displayed as the default author of the posts and the copyright owner in the Footer
+  name: James Robinson
+  email: avghelper@mailbox.org
+  links:
+    # The first element serves as the copyright owner's link
+    - https://twitter.com/avghelper
+    - https://github.com/AverageHelper
+    # Uncomment below to add more social links
+    # - https://www.facebook.com/username
+    # - https://www.linkedin.com/in/username
+
+google_site_verification: ""
+# --------------------------
+
+google_analytics:
+  enabled: false
+  id: ""
+  # Google Analytics pageviews report settings
+  pv:
+    proxy_endpoint: ""
+    cache_path: ""
+
+# Prefer color scheme setting.
+#
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
+#
+# Available options:
+#
+#     light  - Use the light color scheme
+#     dark   - Use the dark color scheme
+#
+theme_mode: # [light|dark]
+
+# The CDN endpoint for images.
+# Notice that once it is assigned, the CDN url
+# will be added to all image (site avatar & posts' images) paths starting with '/'
+#
+# e.g. 'https://cdn.com'
+img_cdn: ""
+
+# the avatar on sidebar, support local or CORS resources
+avatar: https://averagehelper.github.io/assets/images/avatar.jpeg
+
+# boolean type, the global switch for ToC in posts.
+toc: true
+
+disqus:
+  comments: false # boolean type, the global switch for posts comments.
+  shortname: "" # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+
+paginate: 10
+
+# ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
-  input: GFM
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
     block:
       line_numbers: true
+      start_line: 1
 
-# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "disabled"
-adsense-data-ad-client: ""
-adsense-data-ad-slot: ""
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
-# Lazy Images ("enabled" or "disabled")
-lazyimages: "disabled"
+defaults:
+  - scope:
+      path: "" # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: false # Enable comments in posts.
+      toc: true # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs # see `site.collections`
+    values:
+      layout: page
+      permalink: /:title/
+      dynamic_title: true # Hide title in mobile screens.
 
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - docs
+  - README.md
+  - LICENSE
+  - gulpfile.js
+  - node_modules
+  - "*.json"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
