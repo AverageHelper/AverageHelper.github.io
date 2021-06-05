@@ -2,8 +2,8 @@
 title: "Getting Started"
 author: James Robinson
 date: 2021-06-01 18:30:00 +0800
-categories: [Blogging, Tutorial]
-image: assets/images/01-honest-work.jpeg
+categories: [Blogging]
+tags: [first, starting out, beginning, blogging]
 ---
 
 First!
