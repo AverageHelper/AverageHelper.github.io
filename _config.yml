@@ -48,6 +48,7 @@ google_site_verification: ""
 # --------------------------
 
 google_analytics:
+  enabled: false
   id: ""
   # Google Analytics pageviews report settings
   pv:
