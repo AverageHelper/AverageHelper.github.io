@@ -2,9 +2,8 @@ root = true
 
 [*]
 charset = utf-8
-# 2 space indentation
-indent_style = space
-indent_size = 2
+# tab indentation
+indent_style = tab
 trim_trailing_whitespace = true
 # Unix-style newlines with a newline ending every file
 end_of_line = lf
