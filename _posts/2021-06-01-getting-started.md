@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 author: James Robinson
-date: 2021-06-01 18:30:00 +0800
+date: 2021-06-01 10:34:00 -0600
 categories: [Blogging]
 tags: [first, starting out, beginning, blogging]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Changing Themes"
 author: James Robinson
-date: 2021-06-04 18:30:00 +0800
+date: 2021-06-04 22:30:00 -0600
 categories: [Blogging, Tutorial]
 tags: [blogging, projects]
 ---
