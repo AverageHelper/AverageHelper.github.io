@@ -13,6 +13,6 @@ I am software engineer of nine years, with proficiency in:
 
 I have written in Java. I think Java is brilliant, but I like Swift better. TypeScript is even preferrable. (I may be biased, but JetBrains IDEs feel like bloated messes compared to VSCode.)
 
-I love writing with parenthesis. (I don't know why.)
+I love using parenthesis in writing. (I don't know why.)
 
 I'm a huge fan of open-source software. Feel free to check out my [GitHub](https://github.com/AverageHelper), poke around, fork and play around with what you find there!
