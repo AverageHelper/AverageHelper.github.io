@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en-US" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="generator" content="Jekyll v4.2.1" /><meta property="og:title" content="Arch Linux… for Mac" /><meta name="author" content="James Robinson" /><meta property="og:locale" content="en_US" /><meta name="description" content="Do I start calling myself an Arch user before or after I complete the installation procedure?" /><meta property="og:description" content="Do I start calling myself an Arch user before or after I complete the installation procedure?" /><link rel="canonical" href="https://averagehelper.github.io/posts/arch-linux-arm/" /><meta property="og:url" content="https://averagehelper.github.io/posts/arch-linux-arm/" /><meta property="og:site_name" content="Average Helper" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2021-06-09T21:45:00-06:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="Arch Linux… for Mac" /><meta name="twitter:site" content="@avghelper" /><meta name="twitter:creator" content="@James Robinson" /><meta name="google-site-verification" content="" /> <script type="application/ld+json"> {"author":{"@type":"Person","name":"James Robinson"},"headline":"Arch Linux… for Mac","dateModified":"2021-06-09T21:45:00-06:00","datePublished":"2021-06-09T21:45:00-06:00","description":"Do I start calling myself an Arch user before or after I complete the installation procedure?","url":"https://averagehelper.github.io/posts/arch-linux-arm/","mainEntityOfPage":{"@type":"WebPage","@id":"https://averagehelper.github.io/posts/arch-linux-arm/"},"@type":"BlogPosting","@context":"https://schema.org"}</script><title>Arch Linux... for Mac | Average Helper</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Average Helper"><meta name="application-name" content="Average Helper"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script defer src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.15.0,npm/bootstrap@4/dist/js/bootstrap.min.js"></script> <script async src="https://cdn.jsdelivr.net/combine/npm/lozad/dist/lozad.min.js,npm/magnific-popup@1/dist/jquery.magnific-popup.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script defer src="/app.js"></script><body data-spy="scroll" data-target="#toc"><div id="sidebar" class="d-flex flex-column align-items-end">
+<div class="profile-wrapper text-center">
+<div id="avatar"> <a href="/" alt="avatar" class="mx-auto"> <img src="https://avatars.githubusercontent.com/u/1500092" alt="avatar" onerror="this.style.display='none'"> </a>
+</div>
+<div class="site-title mt-3"> <a href="/">Average Helper</a>
+</div>
+<div class="site-subtitle font-italic">An Average Blog</div>
+</div>
+<ul class="w-100">
+<li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a>
+</li>
+<li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a>
+</li>
+<li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tags ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a>
+</li>
+<li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a>
+</li>
+<li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a>
+</li>
+</ul>
+<div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center"> <a href="https://github.com/AverageHelper" aria-label="github" class="order-3" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github-alt"></i> </a> <a href="https://twitter.com/avghelper" aria-label="twitter" class="order-4" target="_blank" rel="noopener noreferrer"> <i class="fab fa-twitter"></i> </a> <a href="javascript:location.href%20=%20'mailto:'%20+%20%5B'avghelper.5fh6g','simplelogin.co'%5D.join('@')" aria-label="email" class="order-5"> <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" class="order-6"> <i class="fas fa-rss"></i> </a> <span class="icon-border order-2"></span> <span id="mode-toggle-wrapper" class="order-1"> <i class="mode-toggle fas fa-adjust"></i> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } var self = this; /* always follow the system prefers */ this.sysDarkPrefers.addListener(function() { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.updateMermaid(); }); } /* constructor() */ setDark() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_KEY); sessionStorage.removeItem(ModeToggle.MODE_KEY); } get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode == ModeToggle.DARK_MODE; } get isLightMode() { return this.mode == ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer) ) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } updateMermaid() { if (typeof mermaid !== "undefined") { let expectedTheme = (this.modeStatus === ModeToggle.DARK_MODE? "dark" : "default"); let config = { theme: expectedTheme }; /* re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */ $(".mermaid").each(function() { let svgCode = $(this).prev().children().html(); $(this).removeAttr("data-processed"); $(this).html(svgCode); }); mermaid.initialize(config); mermaid.init(undefined, ".mermaid"); } } flipMode() { if (this.hasMode) { if (this.isSysDarkPrefer) { if (this.isLightMode) { this.clearMode(); } else { this.setLight(); } } else { if (this.isDarkMode) { this.clearMode(); } else { this.setDark(); } } } else { if (this.isSysDarkPrefer) { this.setLight(); } else { this.setDark(); } } this.updateMermaid(); } /* flipMode() */ } /* ModeToggle */ let toggle = new ModeToggle(); $(".mode-toggle").click(function() { toggle.flipMode(); }); </script> </span>
+</div>
+</div><div id="topbar-wrapper" class="row justify-content-center topbar-down"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Posts </a> </span> <span>Arch Linux... for Mac</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div>
+<i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i> </span> <span id="search-cancel">Cancel</span>
+</div></div><div id="main-wrapper">
+<div id="main">
+<div class="row">
+<div id="post-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+<h1 data-toc-skip>Arch Linux... for Mac</h1>
+<div class="post-meta text-muted d-flex flex-column">
+<div> <span class="semi-bold"> James Robinson </span> <span class="timeago " data-toggle="tooltip" data-placement="bottom" title="Wed, Jun 9, 2021, 9:45 PM -0600" prep="on"> Jun 9 <i class="unloaded">2021-06-09T21:45:00-06:00</i> </span>
+</div>
+<div> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1179 words">6 min</span>
+</div>
+</div>
+<div class="post-content">
+<p>Do I start calling myself an Arch user <em>before</em> or <em>after</em> I complete the installation procedure?</p>
+<p>I recently set it in my heart to try out a Linux distro. I’m planning to run a few small-time servers on Raspberry Pi boards, and I wasn’t sure Raspbian would be right for what I’m trying to do. I learned from <a href="https://youtu.be/rRdThUE0SMA" target="_blank" rel="noopener noreferrer">the interwebs</a> that Arch Linux is pretty great for DIY fans (such as myself most days). My favorite points are these:</p>
+<ul>
+<li>
+<strong>Arch is very light.</strong> There’s not even any desktop environment out of the box. You gotta set that up yourself.</li>
+<li>
+<strong>Everything your Arch installation does, you told it to do.</strong> There’s nothing in the way of anything you want to install to your system. No conventional dependencies of the platform (other than your kernel of choice); no running background processes to eat up precious resources; no bloatware or spyware; nothing to get in in the way of you setting up <em>your</em> computer how <em>you</em> want it to be. This is <em>your</em> tool to use as you please!</li>
+<li>
+<strong>The community is awesome.</strong> I cannot verify this. Being the shy fool that I am, I mainly went the read-the-manual route. I cannot vouch for the it myself, but I’ve heard no bad things about the Arch community.</li>
+</ul>
+<p>I’d heard the name “Arch Linux” thrown around, normally in reference to the meme about Arch users’ alleged propensity for bragging about their OS of choice. I learned today what might give rise to such pride, and why it might be deserved (for a month or two) after <em>successfully</em> installing and running Arch.</p>
+<p>Practice makes permanent, and perfect practice makes perfect. I figure if I can install Arch on my computer under a VM, then I can do it on a Raspberry Pi. So, off to the books I went!</p>
+<h2 id="prerequesites">Prerequesites</h2>
+<p>I’m in a bit of an odd place with this one. I run a Macintosh on the daily. <a href="https://support.apple.com/kb/SP824" target="_blank" rel="noopener noreferrer">One of the schmancy new M1 models.</a> This makes certain things difficult. For example, M1 has an ARM architecture. I need:</p>
+<ul>
+<li>to run Arch on an ARM processor,</li>
+<li>to run Arch on a Mac without compromising my everyday use of macOS,</li>
+<li>to learn how the hay to use Arch.</li>
+</ul>
+<p>I won’t bore you with the troubleshooting trouble that got this project working. Suffice it to say that this project took hours of trial and error at each stage, and expertise beyond my own to finally get to a bootable installation.</p>
+<p>I used Parallels Desktop as my virtual machine, mainly because it was the first VM that I could find that (1) has native M1 Mac support and (2) is familiar to me.</p>
+<h2 id="the-steps">The Steps</h2>
+<p>The first step is to get an installer. Arch for ARM is available in several flavors, depending on the target platform. There is still work being done on a version for M1, so I had to do some digging. There is a <a href="https://archlinuxarm.org/platforms/armv8/generic" target="_blank" rel="noopener noreferrer">Generic AArch64 Installation</a> available, but the site doesn’t provide a discrete .iso file that I can just plug-and-run in Parallels. If you don’t know how to create an .iso from a .tar.gz file, and feel like an idiot for it, you are not alone. I spent hours on this problem, and eventually stumbled on <a href="https://github.com/IComplainInComments/archiso" target="_blank" rel="noopener noreferrer">this fork</a> of <code class="language-plaintext highlighter-rouge">archiso</code>. (I think <code class="language-plaintext highlighter-rouge">archiso</code> is what the Generic .iso is meant to contain.) The <a href="https://github.com/IComplainInComments/archiso/releases/tag/v1.0-Beta" target="_blank" rel="noopener noreferrer">latest release</a> (as of today) contains a downloadable .iso file that I guess makes the changes necessary to run the bootable Arch installer on M1!</p>
+<p>That covers the first step of the official <a href="https://wiki.archlinux.org/title/Installation_guide" target="_blank" rel="noopener noreferrer">Installation Guide</a>. This guide is pretty swick on its own! These instructions work fairly well as stated therein, and I followed these instructions to the letter with only a few exceptions.</p>
+<p>Some of the highly involved steps—like partitioning the disk and setting up the bootloader—are not covered in the Installation Guide in any detail. I used <a href="https://www.tecmint.com/arch-linux-installation-and-configuration-guide/" target="_blank" rel="noopener noreferrer">this TecMint blog post</a> to teach me those bits. I ended up setting up the GRUB bootloader, as these directions describe.</p>
+<p>One important deviation I should mention is that after I mounted the EFI partition temporarily to /boot/EFI, I ran the following command instead of what TechMint says:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>grub-install <span class="nt">--target</span><span class="o">=</span>arm64-efi <span class="nt">--efi-directory</span><span class="o">=</span>/boot/EFI <span class="nt">--bootloader-id</span><span class="o">=</span><span class="s2">"Arch Linux"</span>
+</pre></td>
+</tr></tbody></table></code></div></div>
+<p>In essence, I targeted ARM instead of x86, and named the installation “Arch Linux” instead of “GRUB”.</p>
+<p>If you followed the instructions that I did, under the same system, your VM should have shown you the following screen:</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/posts/2021-06-09-arch-linux-arm/broke-grub.png" alt="A blank GRUB prompt for GNU GRUB version 2.04."> <em>This is what happens when GRUB doesn’t know what to boot.</em></p>
+<h2 id="the-research-the-boring-bits">The Research (the boring bits)</h2>
+<p>I did <em>a lot</em> of Googling here. I also enlisted the help of a friend whom I will call G. I don’t understand this very well yet, so I’ll condense our findings into what I consider to be the most actionable bits.</p>
+<p>The best I found on my own was <a href="https://askubuntu.com/a/1175786" target="_blank" rel="noopener noreferrer">this StackExchange answer</a> which described pointing GRUB to the right disk partition and initiating boot. These instructions did not work for me at all, but were informative to me on how the GRUB shell works. It took some sleuthing around (under G’s experienced guidance) in the installer shell with <code class="language-plaintext highlighter-rouge">efibootmgr -v</code> and <code class="language-plaintext highlighter-rouge">grub-mkconfig -o /boot/grub/grub.cfg</code> to get this thing working.</p>
+<p>To get the system to boot, I needed to run these commands in the <code class="language-plaintext highlighter-rouge">grub</code> prompt:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td>
+<td class="rouge-code"><pre><span class="nb">set </span><span class="nv">root</span><span class="o">=(</span>hd0,gpt3<span class="o">)</span>
+linux /boot/Image <span class="nv">root</span><span class="o">=</span>/dev/sda3
+initrd /boot/initramfs-linux.img
+boot
+</pre></td>
+</tr></tbody></table></code></div></div>
+<p>Once we got the system booted, we could do some more sleuthing, and possibly fix it!</p>
+<h2 id="the-problem">The Problem</h2>
+<p>We learned that, While GRUB could find the boot disk in /dev/sda3 just fine, it could not locate the Linux kernel on that disk!</p>
+<p>The idea, so far as I understand it, is that <code class="language-plaintext highlighter-rouge">grub-mkconfig</code> is supposed to generate a list of available installations from which GRUB should boot. The kernel as we found it on my system was at /boot/Image. For Arch, GRUB expects to find the kernel at /boot/vmlinuz-linux. Since our image was named incorrectly—or <code class="language-plaintext highlighter-rouge">grub-mkconfig</code> isn’t smart enough to check at /boot/Image—generated an empty list of bootable installations. At boot time, GRUB didn’t know any better than to plop me at its prompt.</p>
+<h2 id="the-resolution">The Resolution</h2>
+<p>The fix turned out to be as simple as renaming /boot/Image to /boot/vmlinuz-linux. A simple <code class="language-plaintext highlighter-rouge">cp</code> command to copy the kernel to the right place did the trick. Once I regenerated the GRUB config, all was well!</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td>
+<td class="rouge-code"><pre><span class="nb">cp</span> /boot/Image /boot/vmlinuz-linux
+grub-mkconfig <span class="nt">-o</span> /boot/grub/grub.cfg
+</pre></td>
+</tr></tbody></table></code></div></div>
+<p>I used <code class="language-plaintext highlighter-rouge">cp</code> and not <code class="language-plaintext highlighter-rouge">mv</code> here because I didn’t trust myself to not mess up the kernel. I might delete /boot/Image one day, but not today. 😅</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/posts/2021-06-09-arch-linux-arm/found-kernel.png" alt='The output of the grub-mkconfig command. "Found linux image: /boot/vmlinuz-linux"'> <em>It found the kernel! I’m so proud</em></p>
+<p>On reboot I <em>finally</em> get to see this screen:</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/posts/2021-06-09-arch-linux-arm/success.png" alt='The boot menu, with "Arch Linux" at the top of the installation list.'> <em>The boot menu</em></p>
+<p>My Arch VM now boots reliably! Thanks to G’s indispensable help and troubleshooting prowess, I am now a brand-new Arch user.</p>
+<h2 id="helpful-resources">Helpful Resources</h2>
+<p>Now that my computer runs Arch, I should learn up how to use this new system effectively. My friend G recommended to me this Wiki article on how to use Pacman (Arch’s awesome package manager) in terms familiar to other package managers: <a href="https://wiki.archlinux.org/title/Pacman/Rosetta" target="_blank" rel="noopener noreferrer">pacman/Rosetta</a>.</p>
+</div>
+<div class="post-tail-wrapper text-muted">
+<div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href="/categories/tutorial/">Tutorial</a>, <a href="/categories/troubleshooting/">Troubleshooting</a>, <a href="/categories/virtual-machine/">Virtual Machine</a>
+</div>
+<div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/arch/" class="post-tag no-text-decoration">arch</a> <a href="/tags/linux/" class="post-tag no-text-decoration">linux</a> <a href="/tags/vm/" class="post-tag no-text-decoration">vm</a> <a href="/tags/virtual-machine/" class="post-tag no-text-decoration">virtual machine</a> <a href="/tags/m1/" class="post-tag no-text-decoration">m1</a> <a href="/tags/arm/" class="post-tag no-text-decoration">arm</a> <a href="/tags/mac/" class="post-tag no-text-decoration">mac</a> <a href="/tags/macos/" class="post-tag no-text-decoration">macos</a> <a href="/tags/parallels/" class="post-tag no-text-decoration">Parallels</a>
+</div>
+<div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+<div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> by the author.</div>
+<div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Arch%20Linux...%20for%20Mac%20-%20Average%20Helper&amp;url=https://averagehelper.github.io/posts/arch-linux-arm/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Arch%20Linux...%20for%20Mac%20-%20Average%20Helper&amp;u=https://averagehelper.github.io/posts/arch-linux-arm/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://telegram.me/share?text=Arch%20Linux...%20for%20Mac%20-%20Average%20Helper&amp;url=https://averagehelper.github.io/posts/arch-linux-arm/" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener noreferrer" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i class="fa-fw fas fa-link small" onclick="copyLink()" data-toggle="tooltip" data-placement="top" title="Copy link"></i> </span>
+</div>
+</div>
+</div>
+</div></div>
+<div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down">
+<div class="access">
+<div id="access-lastmod" class="post"> <span>Recent Update</span><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/getting-started/">Getting Started</a></li></ul>
+</div>
+<div id="access-tags"> <span>Trending Tags</span><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/blogging/">blogging</a> <a class="post-tag" href="/tags/apple-card/">Apple Card</a> <a class="post-tag" href="/tags/arch/">arch</a> <a class="post-tag" href="/tags/arm/">arm</a> <a class="post-tag" href="/tags/beginning/">beginning</a> <a class="post-tag" href="/tags/cloud/">cloud</a> <a class="post-tag" href="/tags/eatery/">eatery</a> <a class="post-tag" href="/tags/first/">first</a> <a class="post-tag" href="/tags/food/">food</a> <a class="post-tag" href="/tags/kiosk/">kiosk</a>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"> <span class="pl-3 pt-2 mb-2">Contents</span><nav id="toc" data-toggle="toc"></nav>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+<div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+<h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3>
+<div class="card-deck mb-4">
+<div class="card"> <a href="/posts/changing-themes/"><div class="card-body"> <span class="timeago small"> Jun 4 <i class="unloaded">2021-06-04T22:30:00-06:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Changing Themes</h3>
+<div class="text-muted small"><p> I don’t know what it is about Dark Mode that makes it so… nice. Just today, I re-did this blog in the Chirpy theme, and I must say the experience wasn’t too bad. (Even better after I got rid of th...</p></div>
+</div></a>
+</div>
+<div class="card"> <a href="/posts/will-kiosk-for-food/"><div class="card-body"> <span class="timeago small"> Oct 25 <i class="unloaded">2021-10-25T13:45:00-06:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>The System is Wack: Will Kiosk For Food</h3>
+<div class="text-muted small"><p> Me when computer no work TL;DR Make sure someone else looks at your product, for a good long time, before it becomes the only way people get food. Background Computers can do a lot of good. Th...</p></div>
+</div></a>
+</div>
+<div class="card"> <a href="/posts/getting-started/"><div class="card-body"> <span class="timeago small"> Jun 1 <i class="unloaded">2021-06-01T10:34:00-06:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Getting Started</h3>
+<div class="text-muted small"><p> First! This it literally my first-ever blog post. It ain’t much, but it’s something. I expect I’ll make posts on here from time to time with regards to my open-source work, some software projects...</p></div>
+</div></a>
+</div>
+</div>
+</div>
+<div class="post-navigation d-flex justify-content-between"> <a href="/posts/changing-themes/" class="btn btn-outline-primary" prompt="Older"><p>Changing Themes</p></a> <a href="/posts/will-kiosk-for-food/" class="btn btn-outline-primary" prompt="Newer"><p>The System is Wack: Will Kiosk For Food</p></a>
+</div>
+</div></div></div>
+<footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center">
+<div class="footer-left"><p class="mb-0"> © 2021 <a href="https://twitter.com/avghelper" target="_blank" rel="noopener noreferrer">James Robinson</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div>
+<div class="footer-right"><p class="mb-0"> Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener noreferrer">Chirpy</a> theme.</p></div>
+</div></footer>
+</div>
+<div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content">
+<div id="search-hints">
+<h4 class="text-muted mb-4">Trending Tags</h4>
+<a class="post-tag" href="/tags/blogging/">blogging</a> <a class="post-tag" href="/tags/apple-card/">Apple Card</a> <a class="post-tag" href="/tags/arch/">arch</a> <a class="post-tag" href="/tags/arm/">arm</a> <a class="post-tag" href="/tags/beginning/">beginning</a> <a class="post-tag" href="/tags/cloud/">cloud</a> <a class="post-tag" href="/tags/eatery/">eatery</a> <a class="post-tag" href="/tags/first/">first</a> <a class="post-tag" href="/tags/food/">food</a> <a class="post-tag" href="/tags/kiosk/">kiosk</a>
+</div>
+<div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
+</div></div>
+</div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.3/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="https://averagehelper.github.io{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No result founds.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script>
