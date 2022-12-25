@@ -1,6 +1,8 @@
 # hidden files
 .*
 !.github
+!.prettierignore
+!.nojekyll
 
 # bundler cache
 public
