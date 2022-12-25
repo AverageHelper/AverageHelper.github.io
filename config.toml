@@ -1,0 +1,31 @@
+base_url = "https://averagehelper.github.io"
+title = "Average Helper"
+description = "An Average Blog"
+
+default_language = "en"
+generate_feed = true
+minify_html = true
+
+theme = "d3c3nt"
+
+[markdown]
+  highlight_code = true
+  highlight_theme = "visual-studio-dark"
+  external_links_target_blank = true
+  external_links_no_follow = true
+  external_links_no_referrer = true
+  smart_punctuation = false
+
+[extra]
+  d3_nav = [
+    { name = "HOME", path = "/" },
+    { name = "ABOUT", path = "/about/" },
+    { name = "POSTS", path = "/posts/" },
+    { name = "CONFIG", path = "/config/" },
+    { name = "CATEGORIES", path = "/categories/" },
+    { name = "TAGS", path = "/tags/" },
+    { name = "ARCHIVES", path = "/archives/" },
+  ]
+  d3_icon = "/img/favicons/android-chrome-512x512.png"
+  d3_twitter = "avghelper"
+  d3_author = "James Robinson"

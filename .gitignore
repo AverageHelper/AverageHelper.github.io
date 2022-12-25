@@ -3,13 +3,7 @@
 !.github
 
 # bundler cache
-_site
-vendor
-Gemfile.lock
-
-# rubygem
-*.gem
+public
 
 # npm dependencies
 node_modules
-package-lock.json
