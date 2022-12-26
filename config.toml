@@ -95,7 +95,7 @@ menu_footer = [
 # Resource Files
 #################
 integrity = true # setting this to false is useful for developing, should normally be true.
-js_bundle = true # multiple javascript files combined into a single file
+js_bundle = false # multiple javascript files combined into a single file  # FIXME: Breaks things when the switcher is disabled
 js_switcher = false
 js_search_facade = true # Do not load search until user interaction with search.
 # search library to use, valid values are: false, "elasticlunr", "tinysearch", "stork"
@@ -105,11 +105,11 @@ js_search_index = "search_index.en.js" # Separate Always, generated each build
 js_prestyle = "prestyle.js"# Bundleable - used to preload: FontAwesome, Katex, external Google Fonts
 js_codecopy = "codecopy.js"# Bundleable
 js_email = "email.js"# Bundleable
-js_theme = "theme.min.js" # Separate Always, comment out if using -auto/-light/-dark stylesheet. (required for switcher)
-js_themeButton = "theme_button.js"# Bundleable
+# js_theme = "theme.min.js" # Separate Always, comment out if using -auto/-light/-dark stylesheet. (required for switcher)
+# js_themeButton = "theme_button.js"# Bundleable
 
 ########## Switcher ########## (comment this block out if NOT using switcher):
-stylesheets = [ "abridge-switcher.css" ] # Orange Automatic Dark/Light Theme based on browser/system preference with switcher
+# stylesheets = [ "abridge-switcher.css" ] # Orange Automatic Dark/Light Theme based on browser/system preference with switcher
 #stylesheets = [ "abridge-blue-switcher.css" ] # Blue Automatic Night/Light Theme based on browser/system preference with switcher
 #stylesheets = [ "abridge-blueshade-switcher.css" ] # BlueShade Automatic Night/Light Theme based on browser/system preference with switcher
 #stylesheets = [ "abridge-switcher.css", "font.css" ] # include your own font!
@@ -117,9 +117,9 @@ stylesheets = [ "abridge-switcher.css" ] # Orange Automatic Dark/Light Theme bas
 #stylesheets = [ "abridge-switcher.css", "font.css", "iconfont.css" ] # include your own font, and font icons!
 
 ########## No Switcher ##########
-#stylesheets = [ "abridge.css" ] # Orange Automatic Dark/Light Theme based on browser/system preference
-#stylesheets = [ "abridge-blue.css" ] # Blue Automatic Night/Light Theme based on browser/system preference
-#stylesheets = [ "abridge-blueshade.css" ] # BlueShade Automatic Night/Light Theme based on browser/system preference
+# stylesheets = [ "abridge.css" ] # Orange Automatic Dark/Light Theme based on browser/system preference
+# stylesheets = [ "abridge-blue.css" ] # Blue Automatic Night/Light Theme based on browser/system preference
+stylesheets = [ "abridge-blueshade.css" ] # BlueShade Automatic Night/Light Theme based on browser/system preference
 #stylesheets = [ "abridge-dark.css" ] # Orange Dark Theme
 #stylesheets = [ "abridge-light.css" ] # Orange Light Theme
 #stylesheets = [ "abridge-blue-dark.css" ] # Blue Dark Theme
