@@ -47,11 +47,12 @@ title_separator = "|"  # Separator between title and title_addition, set as |, -
 title_addition = ""
 recent = true # TOC / index
 recent_items = 9
-author = "James Robinson" # Put Your Name here
+author = "James Robinson"
 
 title_size_index = "s85" # size: s95, s90, s85, s80, s75, s70, false(full size)
-meta_index = { position="bottom", size="s90", author=false, readtime=false, readstring="min", date=true, categories_tags=true, divider=" " }
-meta_post = { position="top", size="s95", author=true, readtime=false, readstring="min read", date=true, categories_tags=true, divider=" " }
+meta_index = { position="bottom", size="s90", author=false, readtime=true, readstring="min", date=true, categories_tags=true, divider=" · " }
+meta_post = { position="bottom", size="s95", author=true, readtime=true, readstring="min read", date=true, categories_tags=true, divider=" · " }
+# TODO: Readtime at top always
 ## position: top, bottom, both, false(hidden) ## size: s95, s90, s85, s80, s75, s70, false(full size)
 ## divider:    "&middot;"    "&bull;"    " "
 
