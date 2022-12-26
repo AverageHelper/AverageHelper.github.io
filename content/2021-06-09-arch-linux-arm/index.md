@@ -1,9 +1,17 @@
 +++
 title = "Arch Linux... for Mac"
 author = "James Robinson"
+# description = "Running Arch Linux on an M1 MacBook."
 date = 2021-06-09T21:45:00-06:00
+draft = false
+
+[taxonomies]
 categories = ["Tutorial", "Troubleshooting", "Virtual Machine"]
 tags = ["arch", "linux", "vm", "virtual machine", "m1", "arm", "mac", "macos", "Parallels"]
+[extra]
+toc = true
+keywords = "Arch, Linux, Mac"
+# thumbnail = "ferris-gesture.png"
 +++
 
 Do I start calling myself an Arch user _before_ or _after_ I complete the installation procedure?
@@ -48,7 +56,7 @@ In essence, I targeted ARM instead of x86, and named the installation "Arch Linu
 
 If you followed the instructions that I did, under the same system, your VM should have shown you the following screen:
 
-![A blank GRUB prompt for GNU GRUB version 2.04.](/img/posts/2021-06-09-arch-linux-arm/broke-grub.png)
+![A blank GRUB prompt for GNU GRUB version 2.04.](img/broke-grub.png)
 _This is what happens when GRUB doesn't know what to boot._
 
 ## The Research (the boring bits)
@@ -85,12 +93,12 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 I used `cp` and not `mv` here because I didn't trust myself to not mess up the kernel. I might delete /boot/Image one day, but not today. 😅
 
-![The output of the grub-mkconfig command. "Found linux image: /boot/vmlinuz-linux"](/img/posts/2021-06-09-arch-linux-arm/found-kernel.png)
+![The output of the grub-mkconfig command. "Found linux image: /boot/vmlinuz-linux"](img/found-kernel.png)
 _It found the kernel! I'm so proud_
 
 On reboot I _finally_ get to see this screen:
 
-![The boot menu, with "Arch Linux" at the top of the installation list.](/img/posts/2021-06-09-arch-linux-arm/success.png)
+![The boot menu, with "Arch Linux" at the top of the installation list.](img/success.png)
 _The boot menu_
 
 My Arch VM now boots reliably! Thanks to G's indispensable help and troubleshooting prowess, I am now a brand-new Arch user.

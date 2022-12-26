@@ -1,8 +1,4 @@
 +++
-title = "Home"
-template = "section.html"
+paginate_by = 4
+sort_by = "date"
 +++
-
-# Welcome
-
-This page should have the posts list.

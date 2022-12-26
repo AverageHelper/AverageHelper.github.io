@@ -1,9 +1,17 @@
 +++
 title = "Getting Started"
 author = "James Robinson"
+# description = "My very first blog post."
 date = 2021-06-01T10:34:00-06:00
+draft = false
+
+[taxonomies]
 categories = ["Blogging"]
 tags = ["first", "starting out", "beginning", "blogging"]
+[extra]
+toc = true
+keywords = "Blogging, Markdown, Jekyll"
+# thumbnail = "ferris-gesture.png"
 +++
 
 First!

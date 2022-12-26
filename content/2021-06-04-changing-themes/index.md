@@ -1,14 +1,22 @@
 +++
 title = "Changing Themes"
 author = "James Robinson"
+# description = "Better theme for my blog."
 date = 2021-06-04T22:30:00-06:00
+draft = false
+
+[taxonomies]
 categories = ["Blogging", "Tutorial"]
-tags = ["blogging", "projects"]
+tags = ["blogging", "projects", "jekyll"]
+[extra]
+toc = true
+keywords = "Blogging, Markdown, Jekyll, Theme, Chirpy"
+# thumbnail = "ferris-gesture.png"
 +++
 
-(UPDATE Dec 2022: This article relates to an old version of the blog. Check [the git repo](https://github.com/AverageHelper/averagehelper.github.io) for the detailed history.)
-
 I don't know what it is about Dark Mode that makes website interfaces feel so... nice.
+
+(UPDATE Dec 2022: This article relates to an old version of the blog. Check [the git repo](https://github.com/AverageHelper/averagehelper.github.io) for the detailed history.)
 
 Just today, I re-did this blog in the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme, and I must say the experience wasn't too bad. (Even better after I got rid of the Google Analytics stuff!) The old theme was called [Mediumish](https://www.wowthemes.net/mediumish-free-jekyll-template/), and it never quite suited me. Too many images for my liking. I just wanna write!
 

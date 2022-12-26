@@ -1,12 +1,20 @@
 +++
 title = "The System is Wack: Will Kiosk For Food"
 author = "James Robinson"
+# description = "Ranting about disrespectful technology in food service."
 date = 2021-10-25T13:45:00-06:00
+draft = false
+
+[taxonomies]
 categories = ["Troubleshooting", "Shopping", "Food"]
 tags = ["cloud", "kiosk", "food", "eatery", "someone else's computer", "Apple Card"]
+[extra]
+toc = true
+keywords = "Cloud, Kiosk, Food"
+thumbnail = "img/old-man-yells-at-cloud.jpg"
 +++
 
-![A news clipping from the Simpsons: "Old Man Yells at Cloud," with picture of Grampa Simpson shaking his fist at a cloud in the sky.](/img/posts/2021-10-25-will-kiosk-for-food/old-man-yells-at-cloud.jpg)
+![A news clipping from the Simpsons: "Old Man Yells at Cloud," with picture of Grampa Simpson shaking his fist at a cloud in the sky.](img/old-man-yells-at-cloud.jpg)
 _Me when computer no work_
 
 # TL;DR
