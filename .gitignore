@@ -1,8 +1,5 @@
 # hidden files
-.*
-!.github
-!.prettierignore
-!.nojekyll
+.DS_Store
 
 # bundler cache
 public
