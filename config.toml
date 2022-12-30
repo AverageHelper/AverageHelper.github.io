@@ -97,7 +97,7 @@ menu_footer = [
 integrity = true # setting this to false is useful for developing, should normally be true.
 js_bundle = false # multiple javascript files combined into a single file  # FIXME: Breaks things when the switcher is disabled
 js_switcher = false
-js_search_facade = true # Do not load search until user interaction with search.
+js_search_facade = false # Do not load search until user interaction with search.
 # search library to use, valid values are: false, "elasticlunr", "tinysearch", "stork"
 search_library = false
 
