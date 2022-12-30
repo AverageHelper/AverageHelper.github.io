@@ -6,7 +6,10 @@ A simple blog with only respectful frills, generated using [Zola](https://getzol
 
 ## Features
 
-- TBD
+- Categories
+- Tags
+- Search
+- Estimated minutes to read each article
 
 ## Prerequisites
 
