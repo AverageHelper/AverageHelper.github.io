@@ -1,52 +1,45 @@
 name: "Automatic build"
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     paths-ignore:
       - .gitignore
       - README.md
       - LICENSE
+  pull_request:
+    branches: [main]
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
+  workflow_dispatch:
 
 jobs:
-  continuous-delivery:
+  build:
     runs-on: ubuntu-latest
-
+    if: github.ref != 'refs/heads/main' # only on PR
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0 # for posts's lastmod
+        uses: actions/checkout@v3
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.7
-          bundler-cache: true
-
-      - name: Check baseurl
-        run: |
-          baseurl="$(grep '^baseurl:' _config.yml | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
-          if [[ -n $baseurl ]]; then
-            echo "BASE_URL=$baseurl" >> $GITHUB_ENV
-          fi
-
-      - name: Build Site
+      - name: Test build
+        uses: shalzz/zola-deploy-action@v0.16.1
         env:
-          JEKYLL_ENV: production
-        run: |
-          bundle exec jekyll b -d "_site$BASE_URL"
+          BUILD_ONLY: true
+          BUILD_FLAGS: --drafts
+          CHECK_LINKS: true
 
-      - name: Test Site
-        run: |
-          bash tools/test.sh
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' # only on push
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: Deploy
-        run: |
-          if [[ -n $BASE_URL ]]; then
-            mv _site$BASE_URL _site-rename
-            rm -rf _site
-            mv _site-rename _site
-          fi
-
-          bash tools/deploy.sh
+      - name: Build and Deploy
+        uses: shalzz/zola-deploy-action@v0.16.1
+        env:
+          # Target branch
+          PAGES_BRANCH: gh-pages
+          # Publishing to the same repo, so default token should work
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}

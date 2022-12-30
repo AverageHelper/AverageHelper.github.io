@@ -1,31 +1,21 @@
 {
-	"name": "jekyll-theme-chirpy",
-	"version": "4.0.1",
-	"description": "A minimal, sidebar, responsive web design Jekyll theme that focuses on text presentation.",
-	"main": "index.js",
-	"directories": {
-		"doc": "docs"
-	},
+	"name": "averagehelper.github.io",
+	"version": "2.0.0",
+	"private": true,
+	"description": "A simple blog with only respectful frills.",
+	"license": "CC-BY-4.0",
 	"scripts": {
-		"start": "bundle exec jekyll s",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "zola serve",
+		"build": "zola build",
+		"test": "zola check"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/cotes2020/jekyll-theme-chirpy.git"
+		"url": "git+https://github.com/AverageHelper/AverageHelper.github.io.git"
 	},
-	"author": "Cotes Chung",
-	"license": "MIT",
+	"author": "James Robinson",
 	"bugs": {
-		"url": "https://github.com/cotes2020/jekyll-theme-chirpy/issues"
+		"url": "https://github.com/AverageHelper/AverageHelper.github.io/issues"
 	},
-	"homepage": "https://github.com/cotes2020/jekyll-theme-chirpy#readme",
-	"dependencies": {
-		"gulp": "^4.0.2",
-		"gulp-concat": "^2.6.1",
-		"gulp-insert": "^0.5.0",
-		"gulp-rename": "^2.0.0",
-		"gulp-uglify": "^3.0.2",
-		"uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony"
-	}
+	"homepage": "https://github.com/AverageHelper/AverageHelper.github.io#readme"
 }
