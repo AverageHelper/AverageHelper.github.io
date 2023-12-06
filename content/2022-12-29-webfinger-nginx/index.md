@@ -1,6 +1,6 @@
 +++
 title = "WebFinger Protocol on Nginx"
-author = "James Robinson"
+author = "Madeline Robinson"
 description = "A modern application of an old web protocol."
 date = 2022-12-29T12:00:00-06:00
 draft = false

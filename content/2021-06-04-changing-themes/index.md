@@ -1,6 +1,6 @@
 +++
 title = "Changing Themes"
-author = "James Robinson"
+author = "Madeline Robinson"
 # description = "Better theme for my blog."
 date = 2021-06-04T22:30:00-06:00
 draft = false
