@@ -4,18 +4,21 @@
 	"private": true,
 	"description": "A simple blog with only respectful frills.",
 	"license": "CC-BY-4.0",
+	"author": "Average Helper",
+	"homepage": "https://github.com/AverageHelper/AverageHelper.github.io#readme",
 	"scripts": {
 		"start": "zola serve",
-		"build": "zola build",
+		"build": "node -e \"if ( require('fs').existsSync('./themes/abridge/package_abridge.js')) {require('fs').copyFileSync('./themes/abridge/package_abridge.js', './package_abridge.js')}\" && node package_abridge.js",
 		"test": "zola check"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/AverageHelper/AverageHelper.github.io.git"
 	},
-	"author": "James Robinson",
-	"bugs": {
-		"url": "https://github.com/AverageHelper/AverageHelper.github.io/issues"
-	},
-	"homepage": "https://github.com/AverageHelper/AverageHelper.github.io#readme"
+	"devDependencies": {
+		"fast-toml": "0.5.4",
+		"jsonminify": "0.4.2",
+		"replace-in-file": "7.0.2",
+		"uglify-js": "3.17.4"
+	}
 }

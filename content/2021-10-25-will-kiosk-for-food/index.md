@@ -1,6 +1,6 @@
 +++
 title = "The System is Wack: Will Kiosk For Food"
-author = "James Robinson"
+author = "Madeline Robinson"
 # description = "Ranting about disrespectful technology in food service."
 date = 2021-10-25T13:45:00-06:00
 draft = false

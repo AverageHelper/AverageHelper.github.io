@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Test build
-        uses: shalzz/zola-deploy-action@v0.16.1
+        uses: shalzz/zola-deploy-action@v0.17.2-1
         env:
           BUILD_ONLY: true
           BUILD_FLAGS: --drafts
@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build and Deploy
-        uses: shalzz/zola-deploy-action@v0.16.1
+        uses: shalzz/zola-deploy-action@v0.17.2-1
         env:
           # Target branch
           PAGES_BRANCH: gh-pages

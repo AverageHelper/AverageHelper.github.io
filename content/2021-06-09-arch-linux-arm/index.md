@@ -1,6 +1,6 @@
 +++
 title = "Arch Linux... for Mac"
-author = "James Robinson"
+author = "Madeline Robinson"
 # description = "Running Arch Linux on an M1 MacBook."
 date = 2021-06-09T21:45:00-06:00
 draft = false
