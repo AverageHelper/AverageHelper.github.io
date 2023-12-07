@@ -20,7 +20,7 @@ Follow the [Zola Docs](https://www.getzola.org/documentation/getting-started/ins
 ### Running Local Server
 
 ```console
-$ zola serve
+$ npm start
 ```
 
 Open a browser and visit to _<http://127.0.0.1:1111>_.
@@ -28,7 +28,7 @@ Open a browser and visit to _<http://127.0.0.1:1111>_.
 ### Deployment
 
 ```console
-$ zola build
+$ npm run build
 ```
 
 Deploy the contents of the `public` directory as you see fit.
