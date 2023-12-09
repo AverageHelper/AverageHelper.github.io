@@ -18,7 +18,7 @@ steps:
       - zola build
       - git switch --orphan pages
       - mv public/* .
-      - echo -e 'blog.average.name\naveragehelper.codeberg.page\n' > .domains
+      - echo 'blog.average.name\naveragehelper.codeberg.page\n' > .domains
 
   deploy-pages:
     # Push the resulting files
