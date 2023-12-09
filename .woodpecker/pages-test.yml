@@ -1,0 +1,14 @@
+# On PR toward `main`: run builds, run tests, and deploy
+
+when:
+  - event: manual
+  - event: pull_request
+    branch: main
+
+steps:
+  build:
+    name: Automatic Build
+    group: build
+    image: ghcr.io/getzola/zola:v0.17.1
+    commands:
+      - zola check --drafts

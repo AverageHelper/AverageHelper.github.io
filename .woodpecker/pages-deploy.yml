@@ -1,0 +1,18 @@
+# On push to `main`: run builds and deploy
+
+when:
+  - event: push
+    branch: main
+
+steps:
+  build_and_deploy:
+    name: Automatic Build and Deploy
+    group: build
+    image: ghcr.io/getzola/zola:v0.17.1
+    commands:
+      # Adapted from https://www.getzola.org/documentation/deployment/github-pages/#setting-up-travis
+      - zola build
+      - sudo pip install ghp-import
+      - ghp-import -n public -b main
+      - git push -fq https://${CODEBERG_ACCESS_TOKEN}@codeberg.org/${CI_REPO}.git main
+    secrets: [codeberg_access_token]
