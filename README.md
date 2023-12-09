@@ -1,5 +1,6 @@
 # Average Blog
 
+
 Language: English
 
 A simple blog with only respectful frills, generated using [Zola](https://getzola.org).
