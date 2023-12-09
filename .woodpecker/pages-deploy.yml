@@ -25,7 +25,7 @@ steps:
     settings:
       branch: main
       # remote: git@codeberg.org:averagehelper/pages.git
-      remote: https://${CI_REPO_OWNER}:${CODEBERG_ACCESS_TOKEN}@codeberg.org/AverageHelper/pages.git
+      remote:
+        from_secret: remote # Format: https://${CI_REPO_OWNER}:${CODEBERG_ACCESS_TOKEN}@codeberg.org/AverageHelper/pages.git
       force: true
       commit: true
-    secrets: [codeberg_access_token]
