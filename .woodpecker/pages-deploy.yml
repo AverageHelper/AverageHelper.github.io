@@ -14,8 +14,10 @@ steps:
     # image: ubuntu:noble
     image: curlimages/curl:8.5.0
     commands:
-      # - curl -s -L https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz | sudo tar xvzf - -C /usr/local/bin
-      - curl -s -L https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz | tar xvzf - -C /usr/local/bin
+      - apt-get update -y
+      - apt-get install -y sudo
+      - curl -s -L https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz | sudo tar xvzf - -C /usr/local/bin
+      # - curl -s -L https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz | tar xvzf - -C /usr/local/bin
       - zola build
       - git switch --orphan pages
       - mv public/* .
