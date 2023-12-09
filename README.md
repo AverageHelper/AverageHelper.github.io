@@ -35,7 +35,7 @@ Deploy the contents of the `public` directory as you see fit.
 
 ## Contributing
 
-The old saying, "Two heads are better than one." Consequently, welcome to report bugs, improve code quality or submit a new feature. For more information, see [contributing guidelines](.github/CONTRIBUTING.md).
+The old saying, "Two heads are better than one." Consequently, welcome to report bugs, improve code quality or submit a new feature.
 
 ## License
 

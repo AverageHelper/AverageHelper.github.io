@@ -22,4 +22,4 @@ I love using parentheses in writing. (I don't know why.)
 
 I'm currently employed at [Inventory Shield](https://inventoryshield.com/), working on both their main app and their sister project, [Referral Reactor](https://referralreactor.com/).
 
-I'm a huge fan of open-source software. Feel free to check out my [GitHub](https://github.com/AverageHelper), poke around, fork and play around with what you find there!
+I'm a huge fan of open-source software. Feel free to check out my [Codeberg](https://codeberg.org/AverageHelper), poke around, fork and play around with what you find there!
