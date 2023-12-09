@@ -4,15 +4,27 @@ when:
   - event: push
     branch: main
 
+# Adapted from https://codeberg.org/Codeberg-CI/examples/src/branch/main/Python/mkdocs.yml
 steps:
-  build_and_deploy:
-    name: Automatic Build and Deploy
-    group: build
+  build-pages:
+    # Build the site in /public with Zola
+    name: Build
     image: ghcr.io/getzola/zola:v0.17.1
     commands:
-      # Adapted from https://www.getzola.org/documentation/deployment/github-pages/#setting-up-travis
+      # - curl -s -L https://github.com/getzola/zola/releases/download/v0.17.1/zola-v0.17.1-x86_64-unknown-linux-gnu.tar.gz | sudo tar xvzf - -C /usr/local/bin
       - zola build
-      - sudo pip install ghp-import
-      - ghp-import -n public -b main
-      - git push -fq https://${CODEBERG_ACCESS_TOKEN}@codeberg.org/${CI_REPO}.git main
-    secrets: [codeberg_access_token]
+      - git switch --orphan pages
+      - mv public/* .
+
+  deploy-pages:
+    # Push the resulting files
+    name: Deploy
+    image: appleboy/drone-git-push
+    settings:
+      branch: main
+      # remote: git@codeberg.org:averagehelper/pages.git
+      remote: https://${CODEBERG_ACCESS_TOKEN}codeberg.org:averagehelper/pages.git
+      force: true
+      commit: true
+      # ssh_key:
+      #   from_secret: codeberg_access_token
