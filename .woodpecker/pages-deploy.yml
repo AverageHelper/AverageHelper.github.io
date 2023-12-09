@@ -9,15 +9,11 @@ steps:
   build-pages:
     # Build the site in /public with Zola
     name: Build
-    # image: ghcr.io/getzola/zola:v0.17.2
-    # image: jauderho/zola:v0.17.2
     image: ubuntu:noble
-    # image: curlimages/curl:8.5.0
     commands:
       - apt-get update -y
       - apt-get install -y sudo curl git
       - curl -s -L https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz | sudo tar xvzf - -C /usr/local/bin
-      # - curl -s -L https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz | tar xvzf - -C /usr/local/bin
       - zola build
       - git switch --orphan pages
       - mv public/* .
@@ -29,8 +25,7 @@ steps:
     settings:
       branch: main
       # remote: git@codeberg.org:averagehelper/pages.git
-      remote: https://${CI_REPO_OWNER}:${CODEBERG_ACCESS_TOKEN}@codeberg.org:averagehelper/pages.git
+      remote: https://${CI_REPO_OWNER}:${CODEBERG_ACCESS_TOKEN}@codeberg.org/AverageHelper/pages.git
       force: true
       commit: true
-      # ssh_key:
-      #   from_secret: codeberg_access_token
+    secrets: [codeberg_access_token]
