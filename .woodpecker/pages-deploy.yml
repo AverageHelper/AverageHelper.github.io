@@ -23,7 +23,7 @@ steps:
     name: Deploy
     image: appleboy/drone-git-push
     settings:
-      branch: main
+      branch: pages
       # remote: git@codeberg.org:averagehelper/pages.git
       remote:
         from_secret: remote # Format: https://${CI_REPO_OWNER}:${CODEBERG_ACCESS_TOKEN}@codeberg.org/AverageHelper/pages.git
