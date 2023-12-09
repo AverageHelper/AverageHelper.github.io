@@ -10,7 +10,7 @@ steps:
     # Build the site in /public with Zola
     name: Build
     # image: ghcr.io/getzola/zola:v0.17.1
-    image: alpine/git:latest
+    image: alpine:3
     commands:
       - curl -s -L https://github.com/getzola/zola/releases/download/v0.17.1/zola-v0.17.1-x86_64-unknown-linux-gnu.tar.gz | sudo tar xvzf - -C /usr/local/bin
       - zola build
