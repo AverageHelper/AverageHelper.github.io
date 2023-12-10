@@ -1,8 +1,2 @@
 # hidden files
 .DS_Store
-
-# bundler cache
-public
-
-# npm dependencies
-node_modules
