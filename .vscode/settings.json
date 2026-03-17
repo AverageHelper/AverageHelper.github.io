@@ -1,7 +1,0 @@
-{
-	"editor.detectIndentation": false,
-	"editor.insertSpaces": false,
-	"files.eol": "auto",
-	"terminal.integrated.defaultProfile.windows": "Git Bash",
-	"editor.formatOnSave": true
-}
